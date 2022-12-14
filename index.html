@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bàitâpjs5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-3">
+        <div
+          class="nav flex-column nav-pills"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          <a
+            class="nav-link active"
+            id="v-pills-home-tab"
+            data-toggle="pill"
+            href="#v-pills-home"
+            role="tab"
+            aria-controls="v-pills-home"
+            aria-selected="true"
+            >Bài 1</a
+          >
+          <a
+            class="nav-link"
+            id="v-pills-profile-tab"
+            data-toggle="pill"
+            href="#v-pills-profile"
+            role="tab"
+            aria-controls="v-pills-profile"
+            aria-selected="false"
+            >Bài 2</a
+          >
+          <a
+            class="nav-link"
+            id="v-pills-messages-tab"
+            data-toggle="pill"
+            href="#v-pills-messages"
+            role="tab"
+            aria-controls="v-pills-messages"
+            aria-selected="false"
+            >Bài 3</a
+          >
+          <a
+            class="nav-link"
+            id="v-pills-settings-tab"
+            data-toggle="pill"
+            href="#v-pills-settings"
+            role="tab"
+            aria-controls="v-pills-settings"
+            aria-selected="false"
+            >Bài 4</a
+          >
+        </div>
+      </div>
+      <div class="col-9">
+        <img class="w-100" src="./img/css-backgrounds.jpg" alt="" />
+        <div class="tab-content" id="v-pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-home"
+            role="tabpanel"
+            aria-labelledby="v-pills-home-tab"
+          >
+            <div class="form-group container p-5">
+              <h2>Bài 1: Tính điểm xét theo đối tượng với khu vực</h2>
+              <input
+                type="text"
+                class="form-control mb-3"
+                id="diemchuan"
+                placeholder="Nhấp điểm chuẩn"
+              />
+              <label for="khuvuc">Khu vực:</label>
+              <select id="khuvuc">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="0">0</option>
+              </select>
+              <label for="doituong">Đối tượng:</label>
+              <select id="doituong">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="0">0</option>
+              </select>
+              <input
+                type="text"
+                class="form-control mb-3"
+                id="diem1"
+                placeholder="Nhấp điểm"
+              />
+              <input
+                type="text"
+                class="form-control mb-3"
+                id="diem2"
+                placeholder="Nhấp điểm"
+              />
+              <input
+                type="text"
+                class="form-control mb-3"
+                id="diem3"
+                placeholder="Nhấp điểm"
+              />
+              <br />
+              <button class="btn btn-success" id="ketqua">Kết quả</button>
+              <br />
+              <span class="mt-5 text-success mt2" id="inra">Kết quả</span>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-profile"
+            role="tabpanel"
+            aria-labelledby="v-pills-profile-tab"
+          >
+            <div class="form-group container p-5">
+              <h2>Bài 2: Tính tiền điện</h2>
+              <input
+                type="text"
+                class="form-control mb-3"
+                id="sokw"
+                placeholder="Nhập số KW điện"
+              />
+              <br />
+              <button class="btn btn-success" id="tiendien">Kết quả</button>
+              <br />
+              <span class="mt-5 text-success mt2" id="tiencantra"
+                >Tiền cần trả</span
+              >
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-messages"
+            role="tabpanel"
+            aria-labelledby="v-pills-messages-tab"
+          >
+            <div class="form-group container p-5">
+              <h2>Bài 3: Tính thuế thu nhập cá nhân</h2>
+              <input
+                type="text"
+                class="form-control mb-3"
+                id="ten"
+                placeholder="Nhập họ và tên"
+              />
+              <input
+                type="text"
+                class="form-control mb-3"
+                id="tongThuNhapNam"
+                placeholder="Tổng thu nhập một năm"
+              />
+              <input
+                type="text"
+                class="form-control mb-3"
+                id="soNguoiPhuThuoc"
+                placeholder="Số người phụ thuộc"
+              />
+              <br />
+              <button class="btn btn-success" id="tienThueThuNhap">
+                Kết quả
+              </button>
+              <br />
+              <span class="mt-5 text-success mt2" id="bai3">Tiền cần trả</span>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-settings"
+            role="tabpanel"
+            aria-labelledby="v-pills-settings-tab"
+          >
+            <div class="form-group container p-5">
+              <h2>Bài 4: Tính tiền cáp</h2>
+              <input
+                type="text"
+                class="form-control mb-3 mb-3"
+                id="maKhachHang"
+                placeholder="Nhập mã khách hàng"
+              />
+              <label for="loaiKhachHang">Loại khách hàng:</label>
+              <select id="loaiKhachHang">
+                <option value="nhaDan">Nhà dân</option>
+                <option value="doanhNghiep">Doanh nghiệp</option>
+                <option value="0">0</option>
+              </select>
+              <input
+                type="text"
+                class="form-control mb-3 mb-3"
+                id="soKetNoi"
+                placeholder="Số kết nối"
+              />
+              <input
+                type="text"
+                class="form-control mb-3 mb-3"
+                id="soKenhCaoCap"
+                placeholder="Số kênh cao cấp"
+              />
+              <button type="button" class="btn btn-success" id="tiencap123">
+                Kết quả
+              </button>
+              <br />
+              <span class="mt-5 text-success mt2" id="bai4">Kết quả</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
